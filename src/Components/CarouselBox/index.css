@@ -1,0 +1,4 @@
+.carousel_home {
+  height: max-content;
+  max-height: calc(100vh - 56px)
+}
