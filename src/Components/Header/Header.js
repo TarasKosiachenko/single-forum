@@ -11,9 +11,9 @@ import logo from "./forumlogo.jpg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Slider from '../../Pages/Slider';
-import Blog from '../../Pages/Blog';
-import Contacts from '../../Pages/Contacts';
+import Notes from '../../Pages/Notes';
 import ToDo from '../../Pages/ToDo';
+import Blog from '../../Pages/Blog';
 import Forum from '../../Pages/Forum';
 
 export default function Header(props) {
@@ -37,9 +37,9 @@ export default function Header(props) {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Slider</Nav.Link>
+              <Nav.Link href="/notes">Notes</Nav.Link>
               <Nav.Link href="/todo">ToDo</Nav.Link>
               <Nav.Link href="/blog">Blog</Nav.Link>
-              <Nav.Link href="/contacts">Contacts</Nav.Link>
               <Nav.Link href="/forum">Forum</Nav.Link>
             </Nav>
             <Form className="d-flex">
@@ -58,9 +58,9 @@ export default function Header(props) {
       <Router>
          <Routes>
             <Route exact path='/' element={<Slider/>} />
+            <Route exact path='/notes' element={<Notes/>} />
             <Route exact path='/todo' element={<ToDo/>} />
             <Route exact path='/blog' element={<Blog/>} />
-            <Route exact path='/contacts' element={<Contacts/>} />
             <Route exact path='/forum' element={<Forum/>} />
          </Routes>
       </Router>

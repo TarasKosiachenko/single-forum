@@ -1,7 +1,6 @@
 .createTitleNote {
   display: flex;
   padding: 0.5rem 1rem;
-  align-items: center;
 }
 .createTitleNote p {
   margin: 0;

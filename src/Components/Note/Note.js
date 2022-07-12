@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { Container, Tab, Nav, Row, Col, Button } from "react-bootstrap";
 
-export default function Notes() {
+export default function Note() {
   return (
     <Container>
       <Tab.Container id="left-tabs" defaultActiveKey="myNotes">
@@ -18,7 +18,7 @@ export default function Notes() {
             </Nav>
           </Col>
 
-          <Col sm={9}>
+          <Col sm={9} className='text-center'>
             <Tab.Content className="mt-3">
               <Tab.Pane eventKey="myNotes">
                 <p>My Notes</p>
@@ -35,7 +35,7 @@ export default function Notes() {
                   <textarea name="Text1" cols="40" rows="5"></textarea>
                 </div>
                 <Button
-                  variant="info"
+                  variant="outline-dark"
                   onMouseDown={(e) => e.preventDefault()}
                 >
                   Submit
