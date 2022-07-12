@@ -1,0 +1,19 @@
+.todo_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  word-wrap: break-word;
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 0.3rem;
+}
+.todo_item input, span {
+  margin: 0.5rem;
+}
+
+.todo_text {
+  min-width: 50px;
+  word-wrap: break-word;
+}
