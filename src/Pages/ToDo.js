@@ -1,10 +1,10 @@
 import React from 'react';
-import ToDoList from '../Components/ToDo/ToDoList'
+import TodoList from '../Components/ToDo/TodoList'
 
 export default function ToDo() {
     return (
       <div>
-        <ToDoList />
+        <TodoList />
       </div>
     );
 }

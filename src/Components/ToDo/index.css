@@ -17,3 +17,12 @@
   min-width: 50px;
   word-wrap: break-word;
 }
+
+.todo_delete {
+  color: red;
+  cursor: pointer;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+}
